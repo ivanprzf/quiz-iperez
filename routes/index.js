@@ -14,7 +14,9 @@ router.get('/quizes/question', quizController.question);
 /* GET answer page. */
 router.get('/quizes/answer', quizController.answer);
 
-/* GET creditos page */
-router.get('/quizes/creditos', quizController.answer);
+/* GET author page. */
+router.get('/author', function(req, res) {
+  res.render('author', { title: 'Creditos' });
+});
 
 module.exports = router;
