@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 });
 
 /* GET question page. */
-router.get('/quizes/question', quizController.question);
+//router.get('/quizes/question', quizController.question);
 
 /* GET answer page. */
 router.get('/quizes/answer', quizController.answer);

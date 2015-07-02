@@ -1,4 +1,4 @@
 .DS_Store
- npm-debug.log
- quiz.sqlite
+npm-debug.log
+quiz.sqlite
 .env
