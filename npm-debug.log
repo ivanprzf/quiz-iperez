@@ -1,41 +1,28 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
 1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '--save',
-1 verbose cli   '..' ]
+1 verbose cli   'start' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose readDependencies using package.json deps
-5 verbose cache add [ '..', null ]
-6 verbose cache add name=undefined spec=".." args=["..",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: '..',
-7 verbose parsed url   path: '..',
-7 verbose parsed url   href: '..' }
-8 silly lockFile 9d891e73- ..
-9 verbose lock .. /home/ubuntu/.npm/9d891e73-.lock
-10 silly lockFile 9d891e73- ..
-11 silly lockFile 9d891e73- ..
-12 error addLocal Could not install ..
-13 error Error: ENOENT, open '../package.json'
-14 error If you need help, you may report this *entire* log,
-14 error including the npm and node versions, at:
-14 error     <http://github.com/npm/npm/issues>
-15 error System Linux 3.14.13-c9
-16 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install" "--save" ".."
-17 error cwd /home/ubuntu/workspace/misProyectos/quiz
-18 error node -v v0.10.35
-19 error npm -v 1.4.28
-20 error path ../package.json
-21 error code ENOENT
-22 error errno 34
-23 verbose exit [ 34, true ]
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info prestart quiz@0.0.0
+6 info start quiz@0.0.0
+7 verbose unsafe-perm in lifecycle true
+8 info quiz@0.0.0 Failed to exec start script
+9 error quiz@0.0.0 start: `node ./bin/www`
+9 error Exit status 8
+10 error Failed at the quiz@0.0.0 start script.
+10 error This is most likely a problem with the quiz package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     node ./bin/www
+10 error You can get their info via:
+10 error     npm owner ls quiz
+10 error There is likely additional logging output above.
+11 error System Linux 3.14.13-c9
+12 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "start"
+13 error cwd /home/ubuntu/workspace/misProyectos/quiz
+14 error node -v v0.10.35
+15 error npm -v 1.4.28
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]
