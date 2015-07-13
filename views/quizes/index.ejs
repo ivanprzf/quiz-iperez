@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div>
   <form method="get" action="/quizes">
     <input type="text" placeholder="Buscar..." name="busqueda"/>
@@ -8,5 +9,10 @@
 <table>
   <% var i; for (i=0; i < quizes.length; i++){ %>
       <tr><td><a href="quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a></td></tr>
+=======
+<table>
+  <% var i; for (i=0; i < quizes.length; i++){ %>
+      <tr><td><a href="quizes/<% quizes[i].id %>"><% quizes[i].pregunta %></a></td></tr>
+>>>>>>> 878c6b63ae200718882543a8b21a537e9bed68c7
   <% } %>
 </table>
